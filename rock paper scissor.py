@@ -1,8 +1,8 @@
 import random
 def choice():
-	print('press 1 for rock')
-	print('press 2 for paper')
-	print('press 3 for scissor')
+	print('Press 1 for rock')
+	print('Press 2 for paper')
+	print('Press 3 for scissor')
 	i=int(input('enter your choice : '))
 	if(i==1):
 		print( name , 'chose rock')
@@ -18,11 +18,11 @@ def choice():
 def botchoice():
 	j=random.randint(1,3)
 	if(j==1):
-		print('computer chose rock')
+		print('Computer chose Rock')
 	elif(j==2):
-		print('computer chose paper')
+		print('Computer chose Paper')
 	elif(j==3):
-		print('computer chose scissor')
+		print('Computer chose Scissor')
 	return j
 	
 def play():
@@ -39,7 +39,7 @@ def play():
 			print(name, 'won !')
 			ms+=1
 		elif(a==b):
-			print ('draw !')
+			print ('Draw !')
 		else:
 			print('computer won')
 			cs+=1
@@ -54,6 +54,6 @@ def play():
 		print(name,'lost , computer won')
 		
 #global 
-print('welcome')
+print('Welcome to Rock-Paper-Scissor')
 name=input('enter your name : ')
 play()
